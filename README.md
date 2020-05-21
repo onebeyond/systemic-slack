@@ -24,5 +24,29 @@ new System()
     })
 ```
 
+## How to send a message
+
+Use the client method `chat.postMessage`, documentation is available [here](https://api.slack.com/methods/chat.postMessage)
+```js
+await components.slack.chat.postMessage({
+  channel: 'CXXXXXX', // channel ID
+  text, // Text to send
+});
+```
+
+## How to send a file
+
+Use the client method `files.upload`, documentation is available [here](https://api.slack.com/methods/files.upload)
+```js
+const {createReadStream} = require('fs');
+slackClient.files.upload({
+  filepath,
+  title,
+  channels: [ 'CXXXXXXX' ],
+  file: createReadStream(filepath),
+});
+```
+
+
 ## Message format
 Message content can be formated using MarkDown syntax [Markdown cheatseet](https://www.markdownguide.org/cheat-sheet/)
