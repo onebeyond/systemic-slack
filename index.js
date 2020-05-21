@@ -5,7 +5,7 @@ const { WebClient } = require('@slack/web-api');
 module.exports = () => {
   let slackClient;
   const start = async ({ config }) => {
-    const token = process.env.SLACK_TOKEN;
+    const { token, default_slack_room } = config;
 
     if (!token) {
       throw new Error('Slack API token is not set, please check configuration.');
@@ -16,7 +16,7 @@ module.exports = () => {
     const { iconEmoji, botName } = config;
 
     const sendMessage = (text, room) => slackClient.chat.postMessage({
-      channel: room || process.env.SLACK_ROOM, text, icon_emoji: iconEmoji, username: botName,
+      channel: room || default_slack_room, text, icon_emoji: iconEmoji, username: botName,
     });
 
     const sendFile = async (title, filepath, room) => {
@@ -30,7 +30,7 @@ module.exports = () => {
       const result = await slackClient.files.upload({
         filepath,
         title,
-        channels: room || process.env.SLACK_ROOM,
+        channels: room || default_slack_room,
         file: createReadStream(filepath),
         icon_emoji: iconEmoji,
         username: botName,
@@ -40,7 +40,7 @@ module.exports = () => {
       return result;
     };
 
-    return { sendMessage, sendFile };
+    return { sendMessage, sendFile, slackClient };
   };
 
   return { start };

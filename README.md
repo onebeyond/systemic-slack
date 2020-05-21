@@ -25,6 +25,8 @@ const slack = require('systemic-slack')
 new System()
     .configure({
         slack: {
+          toke: process.env.SLACK_TOKEN,
+          config: process.env.SLACK_ROOM,
           botName: 'My awesome service', // Set the name shown on message
           iconEmoji: 'smile' // 😀 Shows avatar with desired emoji
         }
