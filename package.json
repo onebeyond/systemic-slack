@@ -1,0 +1,32 @@
+{
+  "name": "systemic-slack",
+  "version": "1.0.0",
+  "description": "Slack component for systemic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GentooXativa/systemic-slack.git"
+  },
+  "keywords": [
+    "systemic",
+    "slack"
+  ],
+  "author": "Guidesmiths",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GentooXativa/systemic-slack/issues"
+  },
+  "homepage": "https://github.com/GentooXativa/systemic-slack#readme",
+  "dependencies": {
+    "@slack/web-api": "^5.9.0",
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}
