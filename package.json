@@ -15,7 +15,7 @@
     "slack"
   ],
   "author": "Guidesmiths",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/GentooXativa/systemic-slack/issues"
   },
