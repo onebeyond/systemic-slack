@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GentooXativa/systemic-slack.git"
+    "url": "git+https://github.com/guidesmiths/systemic-slack.git"
   },
   "keywords": [
     "systemic",
@@ -17,9 +17,9 @@
   "author": "Guidesmiths",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GentooXativa/systemic-slack/issues"
+    "url": "https://github.com/guidesmiths/systemic-slack/issues"
   },
-  "homepage": "https://github.com/GentooXativa/systemic-slack#readme",
+  "homepage": "https://github.com/guidesmiths/systemic-slack#readme",
   "dependencies": {
     "@slack/web-api": "^5.9.0",
     "debug": "^4.1.1"
