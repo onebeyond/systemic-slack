@@ -1,3 +1,6 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/0838d2212b7b743931cc/maintainability)](https://codeclimate.com/github/onebeyond/systemic-slack/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/0838d2212b7b743931cc/test_coverage)](https://codeclimate.com/github/onebeyond/systemic-slack/test_coverage)
+
 # systemic-slack
 systemic-slack
 
